@@ -10,7 +10,9 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     CompanyLogo: typeof import('./src/components/Element/CompanyLogo.vue')['default']
+    DashLine: typeof import('./src/components/Element/DashLine.vue')['default']
     EventLogo: typeof import('./src/components/Element/EventLogo.vue')['default']
+    IconIcRoundClose: typeof import('~icons/ic/round-close')['default']
     MainBanner: typeof import('./src/components/Layout/MainBanner.vue')['default']
   }
 }
