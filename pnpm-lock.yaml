@@ -9,6 +9,9 @@ dependencies:
     version: 3.2.47
 
 devDependencies:
+  '@iconify-json/ic':
+    specifier: ^1.1.13
+    version: 1.1.13
   '@iconify-json/mdi':
     specifier: ^1.1.50
     version: 1.1.50
@@ -1539,6 +1542,12 @@ packages:
 
   /@humanwhocodes/object-schema@1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
+    dev: true
+
+  /@iconify-json/ic@1.1.13:
+    resolution: {integrity: sha512-5i5zal/VRwTrs99iMTnG1Zu97bgX9Mkiu9TzR1U1rHBylUnBW+HkOweoQVEPgQITGG024/lNbZxU+3Aa2xuDww==}
+    dependencies:
+      '@iconify/types': 2.0.0
     dev: true
 
   /@iconify-json/mdi@1.1.50:
