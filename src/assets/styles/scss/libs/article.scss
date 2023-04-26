@@ -1,0 +1,17 @@
+.article {
+  color: var(--text-color);
+  
+  :first-child {
+    margin-top: 0;
+  }
+
+  .seo-only {
+    display: none;
+  }
+
+  hr {
+    width: 100%;
+    border: 1px solid var(--text-color);
+    opacity: 0.25;
+  }
+}

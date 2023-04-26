@@ -1,7 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { setupModules } from '@/modules';
+
+setupModules();
+</script>
 
 <template>
   <div></div>
 </template>
 
-<style scoped></style>
+<style lang="scss">
+@import '@/assets/styles/scss/main';
+</style>

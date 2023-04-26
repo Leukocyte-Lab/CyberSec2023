@@ -1,0 +1,15 @@
+@mixin use() {
+  svg {
+    shape-rendering: optimizequality;
+    text-rendering: optimizequality;
+    image-rendering: optimizequality;
+    color-rendering: optimizequality;
+
+    @supports (-webkit-hyphens: none) {
+      shape-rendering: optimizespeed;
+      text-rendering: optimizespeed;
+      image-rendering: optimizespeed;
+      color-rendering: optimizespeed;
+    }
+  }
+}

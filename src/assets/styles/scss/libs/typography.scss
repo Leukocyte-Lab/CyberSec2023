@@ -1,0 +1,179 @@
+@mixin typography {
+  * {
+    font-family: "Noto Sans TC", sans-serif;
+    text-rendering: geometricprecision;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+
+  strong {
+    font-weight: 500;
+  }
+
+  .font {
+    &-thin {
+      font-weight: 300;
+    }
+
+    &-normal {
+      font-weight: 400;
+    }
+
+    &-medium {
+      font-weight: 500;
+    }
+
+    &-semibold {
+      font-weight: 600;
+    }
+
+    &-bold {
+      font-weight: 700;
+    }
+
+    &-black {
+      font-weight: 900;
+    }
+
+    &-uppercase {
+      text-transform: uppercase;
+
+      &.only-first {
+        text-transform: none;
+
+        &::first-letter {
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    &-wrap {
+      white-space: pre;
+
+      &.force-break {
+        white-space: pre-wrap;
+
+        @supports (white-space: break-spaces) {
+          white-space: break-spaces;
+        }
+      }
+    }
+
+    &-size {
+      &--header {
+        &-1 {
+          font-size: $h1-font-size;
+          line-height: 1.25;
+        }
+
+        &-2 {
+          font-size: $h2-font-size;
+          line-height: 1.25;
+        }
+
+        &-3 {
+          font-size: $h3-font-size;
+          line-height: 1.25;
+        }
+
+        &-4 {
+          font-size: $h4-font-size;
+          line-height: 1.25;
+        }
+      }
+
+      &--body {
+        &-1 {
+          font-size: $body-1-font-size;
+          line-height: 1.4;
+        }
+
+        &-2 {
+          font-size: $body-2-font-size;
+          line-height: 1.4;
+        }
+
+        &-3 {
+          font-size: $body-3-font-size;
+          line-height: 1.4;
+
+          &.font {
+            &-medium,
+            &-normal {
+              line-height: 1.6;
+            }
+          }
+        }
+
+        &-4 {
+          font-size: $body-4-font-size;
+          line-height: 1.4;
+
+          &.font {
+            &-normal {
+              line-height: 1.6;
+            }
+          }
+        }
+      }
+
+      &--caption {
+        &-1 {
+          font-size: $caption-1-font-size;
+          line-height: 1.5;
+        }
+
+        &-2 {
+          font-size: $caption-2-font-size;
+          line-height: 1.5;
+        }
+
+        &-3 {
+          font-size: $caption-3-font-size;
+          line-height: 1.5;
+        }
+
+        &-4 {
+          font-size: $caption-4-font-size;
+          line-height: 1.5;
+        }
+
+        &-3,
+        &-4 {
+          &.font {
+            &-normal {
+              line-height: 1.6;
+            }
+          }
+        }
+      }
+    }
+
+    &-align {
+      &--left {
+        text-align: left;
+      }
+
+      &--center {
+        text-align: center;
+      }
+
+      &--right {
+        text-align: right;
+      }
+    }
+
+    &-warp {
+      white-space: pre-wrap;
+    }
+  }
+
+  p {
+    &.paragraph,
+    &.description {
+      line-height: 1.6;
+    }
+  }
+}

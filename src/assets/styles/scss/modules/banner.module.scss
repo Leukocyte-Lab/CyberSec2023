@@ -1,0 +1,76 @@
+@use '@/assets/styles/scss/modules/palette.module.scss' as palette;
+
+.banner {
+  &-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (height < calc(var(--pattern-size) * var(--pattern-scale) * var(--pattern-row))) {
+      height: 100%;
+      justify-content: flex-start;
+    }
+  }
+
+  &-wrapper {
+    --pattern-size: 100px;
+    --pattern-scale: 3;
+    --pattern-col: 3;
+    --pattern-row: 2;
+
+    position: relative;
+    width: calc(var(--pattern-size) * var(--pattern-scale) * var(--pattern-col));
+    height: calc(var(--pattern-size) * var(--pattern-scale) * var(--pattern-row));
+    padding: calc(var(--pattern-size) * var(--pattern-scale) * 0.125);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (width < 900px) {
+      padding: calc(var(--pattern-size) * var(--pattern-scale) * 0.125);
+      height: 100%;
+    }
+
+    @media screen and (width <= 768px) {
+      padding: calc(var(--pattern-size) * var(--pattern-scale) * 0.125);
+    }
+  }
+
+  &-header {
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    > svg {
+      overflow: hidden;
+    }
+
+    @media screen and (width < 900px) {
+      max-height: calc(100% - 320px);
+      padding: 1em;
+    }
+  }
+
+  &-content {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    --text-color: #{palette.$white};
+    --accent-color: #{palette.$black};
+
+    @media screen and (width < 900px) {
+      flex: 0 1 auto;
+    }
+  }
+}
