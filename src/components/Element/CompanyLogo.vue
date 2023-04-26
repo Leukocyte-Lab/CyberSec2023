@@ -70,23 +70,8 @@ const props = withDefaults(
       <path
         d="m751.7,250.3h11.2v12.6c1.9-3.2,4.9-4.4,8.1-4.4,6.8,0,9.6,5.2,9.6,13.6v16.6c0,9.8-1.6,16.9-10.6,16.9-4.5,0-6.5-2.3-7.5-4.7,0,1.6-.2,2.9-.3,3.9h-10.5c.1-2.7.1-7.8.1-11.4l-.1-43.1h0Zm17.7,39.5v-15.9c0-3.4-.4-5.8-3.1-5.8s-3.4,2-3.4,6v15.9c0,4.2,1.1,5.8,3.3,5.8,1.9,0,3.2-1.5,3.2-6"
       />
-      <text class="cls-1" transform="translate(381.79 304.6)">
-        <tspan class="cls-5" x="0" y="0">L</tspan>
-        <tspan x="29.37" y="0">eu</tspan>
-        <tspan class="cls-4" x="96.44" y="0">k</tspan>
-        <tspan class="cls-11" x="128.9" y="0">o</tspan>
-        <tspan class="cls-12" x="162.22" y="0">c</tspan>
-        <tspan class="cls-6" x="194.16" y="0">y</tspan>
-        <tspan class="cls-10" x="227.99" y="0">t</tspan>
-        <tspan class="cls-7" x="249.29" y="0">e</tspan>
-        <tspan class="cls-9" x="282.09" y="0">-</tspan>
-        <tspan class="cls-3" x="302.02" y="0">L</tspan>
-        <tspan x="331.64" y="0">ab</tspan>
-      </text>
-      <text class="cls-2" transform="translate(376.21 191.86)">
-        <tspan class="cls-13" x="0" y="0">LK</tspan>
-        <tspan class="cls-8" x="283.18" y="0">C</tspan>
-      </text>
+      <text class="cls-1" transform="translate(381.79 304.6)">Leukocyte-Lab</text>
+      <text class="cls-2" transform="translate(376.21 191.86)">LKC</text>
     </svg>
   </template>
   <template v-else>
@@ -139,19 +124,7 @@ const props = withDefaults(
       <path
         d="m54.8,23l-.3,8c0,.7-.5,1.4-1.1,1.7l-6.9,3.4c-.6.3-1.2.3-1.7,0l-6.9-3.4c-.6-.3-1.1-1-1.1-1.7l-.3-8c0-.7.4-1.4,1-1.8l7.2-3.8c.6-.3,1.3-.3,1.8,0l7.2,3.8c.7.4,1.1,1,1.1,1.8"
       />
-      <text class="cls-5" transform="translate(112.38 68.99)">
-        <tspan class="cls-2" x="0" y="0">L</tspan>
-        <tspan x="31.19" y="0">eu</tspan>
-        <tspan class="cls-3" x="102.41" y="0">k</tspan>
-        <tspan class="cls-9" x="136.88" y="0">o</tspan>
-        <tspan class="cls-10" x="172.27" y="0">c</tspan>
-        <tspan class="cls-4" x="206.19" y="0">y</tspan>
-        <tspan class="cls-7" x="242.12" y="0">t</tspan>
-        <tspan class="cls-6" x="264.74" y="0">e</tspan>
-        <tspan class="cls-8" x="299.57" y="0">-</tspan>
-        <tspan class="cls-1" x="320.73" y="0">L</tspan>
-        <tspan x="352.19" y="0">ab</tspan>
-      </text>
+      <text class="cls-1" transform="translate(112.38 68.99)">Leukocyte-Lab</text>
     </svg>
   </template>
 </template>
@@ -159,88 +132,30 @@ const props = withDefaults(
 <style lang="scss" scoped>
 .logo {
   &--full {
+    fill: currentcolor;
+
     .cls-1 {
       font-size: 85.88px;
     }
+
     .cls-1,
     .cls-2 {
       fill: none;
-      font-family: AcuminConcept-ExtraCondensedBlack, 'Acumin Variable Concept', sans-serif;
+      font-family: AcuminConcept-ExtraCondensedBlack, 'Acumin Variable Concept', Din, sans-serif;
       font-variation-settings: 'wght' 800, 'wdth' 50, 'slnt' 0;
       font-weight: 800;
-    }
-    .cls-3 {
-      letter-spacing: 0.01em;
-    }
-    .cls-4 {
-      letter-spacing: 0em;
-    }
-    .cls-5 {
-      letter-spacing: 0em;
-    }
-    .cls-6 {
-      letter-spacing: 0.03em;
-    }
-    .cls-7 {
-      letter-spacing: 0em;
-    }
-    .cls-2 {
-      font-size: 251.5px;
-    }
-    .cls-8 {
-      letter-spacing: 0.2em;
-    }
-    .cls-9 {
-      letter-spacing: 0em;
-    }
-    .cls-10 {
-      letter-spacing: 0em;
-    }
-    .cls-11 {
-      letter-spacing: 0em;
-    }
-    .cls-12 {
-      letter-spacing: 0.01em;
-    }
-    .cls-13 {
-      letter-spacing: 0.2em;
     }
   }
 
   &-long {
+    fill: currentcolor;
+
     .cls-1 {
-      letter-spacing: 0.01em;
-    }
-    .cls-2 {
-      letter-spacing: 0em;
-    }
-    .cls-3 {
-      letter-spacing: 0em;
-    }
-    .cls-4 {
-      letter-spacing: 0.03em;
-    }
-    .cls-5 {
       fill: none;
-      font-family: AcuminConcept-ExtraCondensedBlack, 'Acumin Variable Concept';
+      font-family: AcuminConcept-ExtraCondensedBlack, 'Acumin Variable Concept', Din, sans-serif;
       font-size: 91.2px;
       font-variation-settings: 'wght' 800, 'wdth' 50, 'slnt' 0;
       font-weight: 800;
-    }
-    .cls-6 {
-      letter-spacing: 0em;
-    }
-    .cls-7 {
-      letter-spacing: 0em;
-    }
-    .cls-8 {
-      letter-spacing: 0em;
-    }
-    .cls-9 {
-      letter-spacing: 0em;
-    }
-    .cls-10 {
-      letter-spacing: 0.01em;
     }
   }
 }

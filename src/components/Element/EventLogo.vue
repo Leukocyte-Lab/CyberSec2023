@@ -1,5 +1,5 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 623 59">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 623 59" class="logo">
     <path
       class="st0"
       d="M405.8,16c-0.9,0.4-1.9,0.9-2.8,1.3c-1.5,0.6-3.1,1.1-4.5,1.9c-3.1,1.7-5.4,2.4-8.6-0.9
@@ -100,12 +100,16 @@
 </template>
 
 <style scoped>
+.logo {
+  fill: currentcolor;
+}
+
 .st1 {
   fill: none;
 }
 
 .st2 {
-  font-family: 'Gotham-Ultra';
+  font-family: Gotham-Ultra, sans-serif;
 }
 
 .st3 {
