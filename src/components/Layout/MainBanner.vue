@@ -64,13 +64,16 @@ const introductions = [
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
     background-image: url('@/assets/images/material/texture.png');
     background-size: cover;
     background-position: center;
+    overflow: hidden;
   }
 
   &-header {
     position: relative;
+    width: 100%;
     padding: 6.5em 0 5em;
 
     &:before {
@@ -96,12 +99,20 @@ const introductions = [
     background: theme.$glass-gradient;
     padding: 2.5em 0;
 
+    @media screen and (max-width: theme.$breakpoint-tablet) {
+      flex-direction: column;
+    }
+
     &--item {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       
+      @media screen and (max-width: theme.$breakpoint-tablet) {
+        margin: 2em 0;
+      }
+
       h2,
       p {
         margin: 0;
@@ -122,6 +133,10 @@ const introductions = [
     width: 65%;
     margin: 0 auto;
 
+    @media screen and (max-width: theme.$breakpoint-desktop) {
+      width: 85%;
+    }
+
     .icon {
       font-size: $body-1-font-size;
       height: $body-1-font-size;
@@ -133,6 +148,7 @@ const introductions = [
 
   h1.title {
     margin: 0.3em 0;
+    word-break: keep-all;
   }
 
   .date,
@@ -142,7 +158,7 @@ const introductions = [
     justify-content: center;
     align-items: center;
     gap: 24px;
-    margin: 1.5em 6em;
+    margin: 1.5em 1em;
 
     p {
       margin: 0;
@@ -153,6 +169,7 @@ const introductions = [
       width: 200px;
       height: 0;
       border: 2px solid palette.$white;
+      margin: 0;
     }
   }
 
