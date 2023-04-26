@@ -9,10 +9,8 @@ $primary-400: palette.$purple-400;
 $primary-300: palette.$purple-300;
 $primary-200: palette.$purple-200;
 $primary-100: palette.$purple-100;
-
 $primary-gradient: linear-gradient(palette.$dim-200, palette.$dim-100);
 $glass-gradient: linear-gradient(to bottom right, color.change(palette.$white, $alpha: 0.16), color.change(palette.$white, $alpha: 0.04));
-
 $primary-text-color: var(--primary-text-color, #{palette.$white});
 $primary-background-color: var(--primary-background-color, #{palette.$gray-600});
 
