@@ -18,7 +18,7 @@ const { width, height } = useElementSize(decoTextWrapperRef$);
       :height="height"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <text class="deco-text" y="50%" alignment-baseline="central" fill="transparent" stroke-width="4" stroke="url(#gradient)"><slot name="deco" /></text>
+      <text class="deco-text" y="50%" alignment-baseline="central" fill="transparent" stroke-width="2" stroke="url(#gradient)"><slot name="deco" /></text>
       <defs>
         <linearGradient id="gradient" gradientUnits="userSpaceOnUse">
           <stop stop-color="#C59EF3" />
