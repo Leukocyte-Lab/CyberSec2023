@@ -23,7 +23,8 @@
       true,
       {
         "ignoreProperties": [
-          "/mask/"
+          "/mask/",
+          "/text/"
         ]
       }
     ]
