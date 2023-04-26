@@ -6,9 +6,7 @@ setupModules();
 
 <template>
   <MainBanner />
-  <main>
-    
-  </main>
+  <MainContent />
 </template>
 
 <style lang="scss">
