@@ -54,9 +54,9 @@ const introductions = [
 <style lang="scss" scoped>
 @use '@/assets/styles/scss/modules/palette.module.scss' as palette;
 @use '@/assets/styles/scss/modules/theme.module.scss' as theme;
-
 @import '@/assets/styles/scss/variables';
 @import '@/assets/styles/scss/libs/mixin';
+
 .banner {
   &-container {
     position: relative;
@@ -76,7 +76,7 @@ const introductions = [
     width: 100%;
     padding: 6.5em 0 5em;
 
-    &:before {
+    &::before {
       content: '';
       position: absolute;
       top: 0;
@@ -130,7 +130,7 @@ const introductions = [
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 65%;
+    width: 40%;
     margin: 0 auto;
 
     @media screen and (max-width: theme.$breakpoint-desktop) {

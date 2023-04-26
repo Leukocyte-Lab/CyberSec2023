@@ -1,9 +1,9 @@
-@use 'modules/theme.module.scss' as theme;
-@use 'modules/acceleration.module.scss' as acceleration;
-@import 'variables';
-@import 'libs/normalize';
-@import 'libs/typography';
-@import 'libs/article';
+@use "modules/theme.module.scss" as theme;
+@use "modules/acceleration.module.scss" as acceleration;
+@import "variables";
+@import "libs/normalize";
+@import "libs/typography";
+@import "libs/article";
 @include normalize;
 @include typography;
 
@@ -20,7 +20,7 @@ body {
   background: theme.$primary-bg-gradient;
   overflow: hidden;
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     top: 0;
