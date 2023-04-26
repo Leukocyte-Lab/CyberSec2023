@@ -14,5 +14,8 @@ declare module '@vue/runtime-core' {
     EventLogo: typeof import('./src/components/Element/EventLogo.vue')['default']
     IconIcRoundClose: typeof import('~icons/ic/round-close')['default']
     MainBanner: typeof import('./src/components/Layout/MainBanner.vue')['default']
+    MainContent: typeof import('./src/components/Layout/MainContent.vue')['default']
+    OutlineTextGradient: typeof import('./src/components/Effects/OutlineTextGradient.vue')['default']
+    SpotlightTitle: typeof import('./src/components/Element/SpotlightTitle.vue')['default']
   }
 }
