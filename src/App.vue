@@ -5,7 +5,10 @@ setupModules();
 </script>
 
 <template>
-  <div></div>
+  <MainBanner />
+  <main>
+    
+  </main>
 </template>
 
 <style lang="scss">
