@@ -5,6 +5,7 @@ import Vue from '@vitejs/plugin-vue';
 import Components from 'unplugin-vue-components/vite';
 import Unfonts from 'unplugin-fonts';
 import Icons from 'unplugin-icons/vite';
+import IconsResolver from 'unplugin-icons/resolver';
 import { VitePWA } from 'vite-plugin-pwa';
 
 // https://vitejs.dev/config/
@@ -25,10 +26,16 @@ export default defineConfig({
       dts: true,
       deep: true,
       dirs: ['src/components'],
-      include: [/\.vue$/, /\.vue\?vue/]
+      include: [/\.vue$/, /\.vue\?vue/],
+      resolvers: [
+        IconsResolver({
+          prefix: 'icon',
+          enabledCollections: ['mdi', 'ic'],
+        })
+      ]
     }),
     Icons({
-      autoInstall: true,
+      autoInstall: true
     }),
     Unfonts.vite({
       google: {
