@@ -11,7 +11,8 @@ $primary-200: palette.$purple-200;
 $primary-100: palette.$purple-100;
 
 // gradient
-$primary-gradient: linear-gradient(to bottom, palette.$dim-100, palette.$dim-200);
+$primary-gradient: linear-gradient(113.99deg, palette.$light-purple-100 18.67%, palette.$light-purple-200 43.02%, palette.$light-purple-300 64.81%, palette.$light-purple-400 87.87%);
+$primary-bg-gradient: linear-gradient(to bottom, palette.$dim-100, palette.$dim-200);
 $glass-gradient: linear-gradient(to bottom right, color.change(palette.$white, $alpha: 0.16), color.change(palette.$white, $alpha: 0.04));
 
 // default color sets
