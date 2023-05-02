@@ -133,6 +133,7 @@ const props = withDefaults(
 .logo {
   &-full {
     fill: currentcolor;
+    width: 100%;
 
     .cls-1 {
       font-size: 85.88px;
@@ -153,6 +154,7 @@ const props = withDefaults(
 
   &-long {
     fill: currentcolor;
+    width: 100%;
 
     .cls-1 {
       fill: none;
