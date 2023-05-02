@@ -1,0 +1,47 @@
+@use '@/assets/styles/scss/modules/palette.module.scss' as palette;
+@use '@/assets/styles/scss/modules/theme.module.scss' as theme;
+
+.button {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: theme.$primary-500;
+  text-decoration: none;
+  margin: calc(4px * var(--font-scale));
+  width: fit-content;
+
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: calc(0.5em * var(--font-scale)) calc(2.5em * var(--font-scale));
+    background-color: palette.$white;
+    border-radius: calc(2.5em * var(--font-scale));
+    z-index: 1;
+
+    svg {
+      margin-left: calc(0.5em * var(--font-scale));
+    }
+  }
+
+  &:hover {
+    color: theme.$primary-text-color;
+
+    span {
+      background-color: transparent;
+    }
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: calc(4px * var(--font-scale) * -1);
+    left: calc(4px * var(--font-scale) * -1);
+    width: calc(100% + 4px * var(--font-scale) * 2);
+    height: calc(100% + 4px * var(--font-scale) * 2);
+    border-radius: calc(2.5em * var(--font-scale));
+    background: theme.$primary-gradient;
+    z-index: 0;
+  }
+}

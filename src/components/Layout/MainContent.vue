@@ -2,6 +2,15 @@
 
 <template>
   <main class="main-container">
+    <div class="wrapper wrapper-container">
+      <a
+        href="https://cyber.ithome.com.tw/2023/exhibition-page/1348"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="button font-size--body-2 font-bold"
+        ><span>瞭解更多</span></a
+      >
+    </div>
     <article class="article">
       <SpotlightTitle>
         <template #deco>AGENDA</template>
@@ -102,6 +111,9 @@
       <p class="paragraph font-size--body-1 font-bold font-align--center">
         抵達展館 4 樓後，從 R 區入口進來就可以看到我們囉！
       </p>
+      <div class="wrapper wrapper-container align--center">
+        <a href="https://goo.gl/maps/hrwEaN9wkvAroPCf6" target="_blank" rel="noopener noreferrer" class="button font-size--body-2 font-bold"><span>查看會場位置</span></a>
+      </div>
       <img class="align--center" src="@/assets/images/material/R101-map.svg" alt="" />
     </article>
     <article id="product" class="article align--center">
@@ -124,6 +136,7 @@
           ArgusHack
           能有效幫助您評估資安建設可視性、為資安團隊進行真實演練，並能協助評估資安投資有效性，藉此全面提升您的資安體系健全度。
         </p>
+        <a href="https://resource.lkc-lab.com/AGH-White-Paper-1" target="_blank" rel="noopener noreferrer" class="button font-size--body-2 font-bold"><span>下載產品白皮書<icon-ic-outline-file-download /></span></a>
       </div>
       <div class="session mini wrapper wrapper-container col align--center">
         <img class="icon align--center" src="@/assets/images/material/icon-hand-shake.svg" alt="" />
@@ -134,6 +147,7 @@
           ArgusHack 能協助您呈現資安設備的成效，並加強客戶對產品的信心。<br />透過 ArgusHack
           的自動化技術更能有效降低人力成本，也作為企業不斷累積技術的軍火庫。
         </p>
+        <a href="https://resource.lkc-lab.com/AGH-White-Paper-2" target="_blank" rel="noopener noreferrer" class="button font-size--body-2 font-bold"><span>下載產品白皮書<icon-ic-outline-file-download /></span></a>
       </div>
     </article>
     <article id="hiring" class="article align--center">
@@ -144,6 +158,9 @@
           <p class="font-size--body-3 font-align--center">
             邀請您一起對抗資安威脅，為業界注入更多資安免疫力。
           </p>
+          <div class="wrapper wrapper-container align--center">
+            <a href="https://www.cakeresume.com/companies/leukocyte-lab-co-ltd/jobs" target="_blank" rel="noopener noreferrer" class="button font-size--body-2 font-bold"><span>加入我們</span></a>
+          </div>
         </div>
         <div class="session">
           <div class="wrapper wrapper-container row gap-8">
@@ -169,6 +186,11 @@
 
 .main {
   &-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     .icon {
       width: calc($h1-font-size * var(--font-scale));
     }
