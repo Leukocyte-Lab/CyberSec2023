@@ -21,7 +21,12 @@ $primary-text-color: var(--primary-text-color, #{palette.$white});
 $primary-background-color: var(--primary-background-color, #{palette.$gray-600});
 
 // breakpoints
+$breakpoint-desktop-xl: 1440px;
 $breakpoint-desktop: 1280px;
 $breakpoint-tablet: 1024px;
+$breakpoint-tablet-xs: 800px;
+$breakpoint-mobile-xl: 768px;
+$breakpoint-mobile: 480px;
+$breakpoint-mobile-xs: 414px;
 
 // #endregion

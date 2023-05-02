@@ -97,7 +97,7 @@ const introductions = [
     justify-content: space-evenly;
     width: 100%;
     background: theme.$glass-gradient;
-    padding: 2.5em 0;
+    padding: calc(2.5em * var(--font-scale)) 0;
 
     @media screen and (max-width: theme.$breakpoint-tablet) {
       flex-direction: column;
@@ -108,9 +108,9 @@ const introductions = [
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      
+
       @media screen and (max-width: theme.$breakpoint-tablet) {
-        margin: 2em 0;
+        margin: calc(2em * var(--font-scale)) 0;
       }
 
       h2,
@@ -119,7 +119,7 @@ const introductions = [
       }
 
       svg {
-        margin: 1.5em;
+        margin: calc(1.5em * var(--font-scale));
         width: 40%;
       }
     }
@@ -138,10 +138,10 @@ const introductions = [
     }
 
     .icon {
-      font-size: $body-1-font-size;
-      height: $body-1-font-size;
-      width: $body-1-font-size;
-      margin: 0 calc($body-1-font-size / 2);
+      font-size: calc($body-1-font-size * var(--font-scale));
+      height: calc($body-1-font-size * var(--font-scale));
+      width: calc($body-1-font-size * var(--font-scale));
+      margin: 0 calc($body-1-font-size * var(--font-scale) / 2);
       flex-shrink: 0;
     }
   }
@@ -158,7 +158,7 @@ const introductions = [
     justify-content: center;
     align-items: center;
     gap: 24px;
-    margin: 1.5em 1em;
+    margin: calc(1.5em * var(--font-scale)) calc(1em * var(--font-scale));
 
     p {
       margin: 0;
@@ -179,7 +179,7 @@ const introductions = [
   }
 
   .outline {
-    @include text-outline-stroke($stroke-width: 3px, $color: palette.$white);
+    @include text-outline-stroke($stroke-width: calc(3px * var(--font-scale)), $color: palette.$white);
   }
 }
 </style>

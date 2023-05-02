@@ -64,39 +64,39 @@
     &-size {
       &--header {
         &-1 {
-          font-size: $h1-font-size;
+          font-size: calc($h1-font-size * var(--font-scale));
           line-height: 1.25;
         }
 
         &-2 {
-          font-size: $h2-font-size;
+          font-size: calc($h2-font-size * var(--font-scale));
           line-height: 1.25;
         }
 
         &-3 {
-          font-size: $h3-font-size;
+          font-size: calc($h3-font-size * var(--font-scale));
           line-height: 1.25;
         }
 
         &-4 {
-          font-size: $h4-font-size;
+          font-size: calc($h4-font-size * var(--font-scale));
           line-height: 1.25;
         }
       }
 
       &--body {
         &-1 {
-          font-size: $body-1-font-size;
+          font-size: calc($body-1-font-size * var(--font-scale));
           line-height: 1.4;
         }
 
         &-2 {
-          font-size: $body-2-font-size;
+          font-size: calc($body-2-font-size * var(--font-scale));
           line-height: 1.4;
         }
 
         &-3 {
-          font-size: $body-3-font-size;
+          font-size: calc($body-3-font-size * var(--font-scale));
           line-height: 1.4;
 
           &.font {
@@ -108,7 +108,7 @@
         }
 
         &-4 {
-          font-size: $body-4-font-size;
+          font-size: calc($body-4-font-size * var(--font-scale));
           line-height: 1.4;
 
           &.font {
@@ -121,22 +121,22 @@
 
       &--caption {
         &-1 {
-          font-size: $caption-1-font-size;
+          font-size: calc($caption-1-font-size * var(--font-scale));
           line-height: 1.5;
         }
 
         &-2 {
-          font-size: $caption-2-font-size;
+          font-size: calc($caption-2-font-size * var(--font-scale));
           line-height: 1.5;
         }
 
         &-3 {
-          font-size: $caption-3-font-size;
+          font-size: calc($caption-3-font-size * var(--font-scale));
           line-height: 1.5;
         }
 
         &-4 {
-          font-size: $caption-4-font-size;
+          font-size: calc($caption-4-font-size * var(--font-scale));
           line-height: 1.5;
         }
 

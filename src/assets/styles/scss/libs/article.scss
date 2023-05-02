@@ -2,7 +2,7 @@
 
 .article {
   color: var(--text-color);
-  padding: 6.5em;
+  padding: calc(6.5em * var(--font-scale));
 
   &.align {
     &--center {
@@ -45,6 +45,10 @@
   img {
     max-width: theme.$breakpoint-tablet;
 
+    @media screen and (max-width: theme.$breakpoint-tablet) {
+      max-width: 100%;
+    }
+
     &.side {
       display: inline;
     }
@@ -52,12 +56,13 @@
     &.align {
       &--center {
         margin: 0 auto;
+        max-width: 100%;
       }
     }
   }
 
   .deco-bar {
-    width: 250px;
+    width: calc(15em * var(--font-scale));
   }
 
   .outline {

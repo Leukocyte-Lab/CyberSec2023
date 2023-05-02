@@ -18,6 +18,8 @@ body {
 }
 
 #app {
+  @include font-rwd;
+
   position: relative;
   min-height: 100vh;
   background: theme.$primary-bg-gradient;

@@ -2,3 +2,27 @@
   -webkit-text-stroke: $stroke-width $color;
   -webkit-text-fill-color: transparent;
 }
+
+@mixin font-rwd {
+  --font-scale: 1;
+
+  @media screen and (max-width: theme.$breakpoint-desktop) {
+    --font-scale: 0.8;
+  }
+
+  @media screen and (max-width: theme.$breakpoint-tablet) {
+    --font-scale: 0.75;
+  }
+
+  @media screen and (max-width: theme.$breakpoint-mobile-xl) {
+    --font-scale: 0.7;
+  }
+
+  @media screen and (max-width: theme.$breakpoint-mobile) {
+    --font-scale: 0.5;
+  }
+
+  @media screen and (max-width: theme.$breakpoint-mobile-xs) {
+    --font-scale: 0.4;
+  }
+}

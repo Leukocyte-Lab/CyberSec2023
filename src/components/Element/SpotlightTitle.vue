@@ -57,19 +57,21 @@ const { width, height } = useElementSize(decoTextWrapperRef$);
         position: absolute;
 
         .deco-text {
-          font-size: $h1-font-size;
+          font-size: calc($h1-font-size * var(--font-scale));
         }
       }
     }
 
     .deco {
       position: absolute;
-      left: 0;
+      left: calc($h1-font-size * var(--font-scale) * -1 * (1 + 3 * (1 - var(--font-scale))));
+      height: calc($h1-font-size * var(--font-scale));
+      transform: scale(var(--font-scale));
 
       &:last-child {
-        transform: rotate(180deg);
+        transform: rotate(180deg) scale(var(--font-scale));
         left: auto;
-        right: 0;
+        right: calc($h1-font-size * var(--font-scale) * -1 * (1 + 3 * (1 - var(--font-scale))));
       }
     }
 

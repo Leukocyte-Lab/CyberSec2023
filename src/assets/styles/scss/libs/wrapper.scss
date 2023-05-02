@@ -1,11 +1,19 @@
+@use '@/assets/styles/scss/modules/theme.module.scss' as theme;
+
 .wrapper {
   &-container {
     position: relative;
     display: flex;
-    margin: 6em 0;
+    margin: calc(6em * var(--font-scale)) 0;
 
     &.row {
       flex-direction: row;
+
+      &:not(.keep) {
+        @media screen and (max-width: theme.$breakpoint-desktop-xl) {
+          flex-direction: column;
+        }
+      }
     }
 
     &.col {
@@ -14,7 +22,7 @@
 
     @for $i from 1 through 10 {
       &.gap-#{$i} {
-        gap: #{$i}em;
+        gap: calc(#{$i}em * var(--font-scale));
       }
     }
 

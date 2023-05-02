@@ -1,13 +1,21 @@
 <template>
   <footer class="footer">
-    <div class="wrapper wrapper-container row">
+    <div class="wrapper wrapper-container row keep">
       <div class="wrapper wrapper-container col gap-2">
         <CompanyLogo :type="'full'" />
-        <div class="wrapper wrapper-container row gap-2">
-          <a class="font-size--body-3" href="https://fb.com/LeukocyteLab/"><icon-fa6-brands-facebook-f /></a>
-          <a class="font-size--body-3" href="https://www.linkedin.com/company/lkc-lab"><icon-fa6-brands-linkedin-in /></a>
-          <a class="font-size--body-3" href="https://twitter.com/CoLeukocyte"><icon-fa6-brands-twitter /></a>
-          <a class="font-size--body-3" href="https://medium.com/h1dra-security-team"><icon-fa6-brands-medium /></a>
+        <div class="wrapper wrapper-container row keep gap-2">
+          <a class="font-size--body-3" href="https://fb.com/LeukocyteLab/"
+            ><icon-fa6-brands-facebook-f
+          /></a>
+          <a class="font-size--body-3" href="https://www.linkedin.com/company/lkc-lab"
+            ><icon-fa6-brands-linkedin-in
+          /></a>
+          <a class="font-size--body-3" href="https://twitter.com/CoLeukocyte"
+            ><icon-fa6-brands-twitter
+          /></a>
+          <a class="font-size--body-3" href="https://medium.com/h1dra-security-team"
+            ><icon-fa6-brands-medium
+          /></a>
         </div>
       </div>
       <div class="wrapper wrapper-container row">
@@ -22,7 +30,9 @@
         </div>
         <div class="wrapper wrapper-container col">
           <h3 class="font-size--body-4">Have A Meet</h3>
-          <p class="font-size--body-4"><icon-ic-round-access-time-filled /><span>Mon - Fri｜9:30 - 18:30</span></p>
+          <p class="font-size--body-4">
+            <icon-ic-round-access-time-filled /><span>Mon - Fri｜9:30 - 18:30</span>
+          </p>
           <a class="font-size--body-4" href="https://goo.gl/maps/YpEMMLj7HfLdGWiZA"
             ><icon-ic-round-location-on /><span>新北市板橋區民族路 34 巷 22 號 2 樓</span></a
           >
@@ -49,6 +59,14 @@
   align-items: center;
   padding: 2.5em 6.5em;
 
+  @media screen and (max-width: theme.$breakpoint-mobile-xl) {
+    padding: 2.5em 4em;
+  }
+
+  @media screen and (max-width: theme.$breakpoint-mobile) {
+    padding: 2em;
+  }
+
   .logo-full {
     max-width: 16.875em;
   }
@@ -61,6 +79,24 @@
   .wrapper-container {
     width: 100%;
     position: relative;
+
+    @media screen and (max-width: theme.$breakpoint-desktop-xl) {
+      margin: calc(1em * var(--font-scale)) 0;
+    }
+
+    @media screen and (max-width: theme.$breakpoint-tablet-xs) {
+      justify-content: center;
+
+      .logo-full {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  > .wrapper-container.row.keep {
+    @media screen and (max-width: theme.$breakpoint-tablet-xs) {
+      flex-direction: column;
+    }
   }
 
   a {
