@@ -1,6 +1,6 @@
 @mixin typography {
   * {
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Noto Sans CJK TC", "Noto Sans TC", sans-serif;
     text-rendering: geometricprecision;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: grayscale;
