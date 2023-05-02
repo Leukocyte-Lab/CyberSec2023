@@ -19,6 +19,7 @@ declare module '@vue/runtime-core' {
     IconFa6BrandsMedium: typeof import('~icons/fa6-brands/medium')['default']
     IconFa6BrandsTwitter: typeof import('~icons/fa6-brands/twitter')['default']
     IconIcClock: typeof import('~icons/ic/clock')['default']
+    IconIcOutlineFileDownload: typeof import('~icons/ic/outline-file-download')['default']
     IconIcRoundAccessTimeFilled: typeof import('~icons/ic/round-access-time-filled')['default']
     IconIcRoundClose: typeof import('~icons/ic/round-close')['default']
     IconIcRoundLocalPhone: typeof import('~icons/ic/round-local-phone')['default']
