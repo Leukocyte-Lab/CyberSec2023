@@ -118,7 +118,7 @@
     </article>
     <article id="product" class="article align--center">
       <SpotlightTitle>
-        <template #deco>OUR PRODUCT</template>
+        <template #deco>PRODUCT</template>
         <template #text>我們的產品</template>
       </SpotlightTitle>
       <div class="wrapper wrapper-container col gap-4 align--center">

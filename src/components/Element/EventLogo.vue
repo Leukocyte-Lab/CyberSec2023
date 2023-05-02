@@ -102,6 +102,7 @@
 <style scoped>
 .logo {
   fill: currentcolor;
+  width: 100%;
 }
 
 .st1 {
