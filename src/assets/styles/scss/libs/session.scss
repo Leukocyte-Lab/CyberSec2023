@@ -14,6 +14,13 @@
     max-width: calc(theme.$breakpoint-tablet * 0.75);
   }
 
+  &,
+  &.mini {
+    @media screen and (max-width: theme.$breakpoint-tablet) {
+      width: 100%;
+    }
+  }
+
   &.align {
     &--left {
       margin-left: 0;
@@ -33,21 +40,21 @@
 
   &.featured {
     position: relative;
-    padding: 2.1875em;
-    border-width: 3px;
+    padding: calc(2.1875em * var(--font-scale));
+    border-width: calc(3px * var(--font-scale));
     background-color: theme.$primary-700;
     @extend %feature-border;
 
     &:before {
-      $offset: 1em;
+      $offset: calc(1em * var(--font-scale));
 
       content: '';
       position: absolute;
-      top: -$offset;
-      left: -$offset;
+      top: calc(-1 * $offset);
+      left: calc(-1 * $offset);
       width: calc(100% + $offset * 2);
       height: calc(100% + $offset * 2);
-      border-width: 5px;
+      border-width: calc(5px * var(--font-scale));
       box-sizing: border-box;
 
       @extend %feature-border;

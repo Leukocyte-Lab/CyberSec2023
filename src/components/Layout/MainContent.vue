@@ -26,16 +26,20 @@
             <div class="wrapper wrapper-container col">
               <label class="label font-size--body-4">Blue Team 論壇</label>
               <h1 class="font-size--header-4">資安團隊全面提升，<br />從攻擊演練到投資管理</h1>
-              <p class="info font-size--body-3 font-semibold">
-                <icon-ic-round-access-time-filled />
-                <span class="time">2023/05/11（四）10:15 - 10:45</span>
-                <icon-ic-round-location-on />
-                <span class="location">7F - 701C</span>
-              </p>
+              <div class="wrapper wrapper-container row">
+                <p class="info font-size--body-3 font-semibold">
+                  <icon-ic-round-access-time-filled />
+                  <span class="time">2023/05/11（四）10:15 - 10:45</span>
+                </p>
+                <p class="info font-size--body-3 font-semibold">
+                  <icon-ic-round-location-on />
+                  <span class="location">7F - 701C</span>
+                </p>
+              </div>
             </div>
           </div>
         </section>
-        <p class="session paragraph font-size--body-3 align--right">
+        <p class="session mini paragraph font-size--body-3 align--right">
           本議程旨在探討有效經營資安團隊並讓資安人員能發揮更高的效益的方法。從攻擊演練的角度，將資安營運切分為建設、團隊和投資三個面向。並著重於事件發生的前、中、後階段，探討如何提升資安管理者在資安投資層面的採購評估與決策效率、資安建設的資安強韌性量測與產品驗證效率，以及提升資安團隊的臨場應變和資安演練效率。
         </p>
       </div>
@@ -50,22 +54,26 @@
               <h1 class="font-size--header-4">
                 資安新思維：加入 Leukocyte-Lab<br />開創資安價值轉化的未來
               </h1>
-              <p class="info font-size--body-3 font-semibold">
-                <icon-ic-round-access-time-filled />
-                <span class="time">2023/05/11（四）14:45 - 15:00</span>
-                <icon-ic-round-location-on />
-                <span class="location">4F - Cyber Talent 專區</span>
-              </p>
+              <div class="wrapper wrapper-container row">
+                <p class="info font-size--body-3 font-semibold">
+                  <icon-ic-round-access-time-filled />
+                  <span class="time">2023/05/11（四）14:45 - 15:00</span>
+                </p>
+                <p class="info font-size--body-3 font-semibold">
+                  <icon-ic-round-location-on />
+                  <span class="location">4F - Cyber Talent 專區</span>
+                </p>
+              </div>
             </div>
           </div>
         </section>
-        <p class="session paragraph font-size--body-3 align--left">
+        <p class="session mini paragraph font-size--body-3 align--left">
           Leukocte-Lab 的核心理念是將資安技術轉化為價值，提供優良的價值傳遞管道。<br />
           如果你對打造將知識轉化為價值的新世代資安產品有熱忱，或者熱愛接受困難挑戰，對於改變價值傳遞管道的創新商業模式有興趣，那麼我們肯定是你最佳的選擇。
         </p>
       </div>
     </article>
-    <article class="article">
+    <article id="activity" class="article">
       <SpotlightTitle>
         <template #deco>ACTIVITY</template>
         <template #text>活動資訊</template>
@@ -96,7 +104,7 @@
       </p>
       <img class="align--center" src="@/assets/images/material/R101-map.svg" alt="" />
     </article>
-    <article class="article align--center">
+    <article id="product" class="article align--center">
       <SpotlightTitle>
         <template #deco>OUR PRODUCT</template>
         <template #text>我們的產品</template>
@@ -110,7 +118,7 @@
         <AGHEyeRingLogo />
       </div>
       <div class="session mini wrapper wrapper-container col align--center">
-        <img class="align--center" src="@/assets/images/material/icon-hand-lock.svg" alt="" />
+        <img class="icon align--center" src="@/assets/images/material/icon-hand-lock.svg" alt="" />
         <h3 class="font-size--header-4 font-align--center">您是企業的資安團隊成員嗎？</h3>
         <p class="paragraph font-size--body-3 font-align--center">
           ArgusHack
@@ -118,7 +126,7 @@
         </p>
       </div>
       <div class="session mini wrapper wrapper-container col align--center">
-        <img class="align--center" src="@/assets/images/material/icon-hand-shake.svg" alt="" />
+        <img class="icon align--center" src="@/assets/images/material/icon-hand-shake.svg" alt="" />
         <h3 class="font-size--header-4 font-align--center">
           您是提供資安產品<br />與服務的企業嗎？
         </h3>
@@ -128,7 +136,7 @@
         </p>
       </div>
     </article>
-    <article class="article align--center">
+    <article id="hiring" class="article align--center">
       <div class="wrapper wrapper-container col gap-4 align--center">
         <div class="wrapper wrapper-container col">
           <h2 class="font-size--body-2 font-bold font-align--center">現正招募中</h2>
@@ -157,9 +165,29 @@
 
 <style lang="scss" scoped>
 @use '@/assets/styles/scss/modules/theme.module.scss' as theme;
+@import '@/assets/styles/scss/variables';
 
 .main {
   &-container {
+    .icon {
+      width: calc($h1-font-size * var(--font-scale));
+    }
+
+    #hiring,
+    #product,
+    #activity {
+      @media screen and (max-width: theme.$breakpoint-desktop-xl) {
+        text-align: center;
+      }
+    }
+
+    .time,
+    .location {
+      @media screen and (max-width: theme.$breakpoint-desktop-xl) {
+        white-space: nowrap;
+        margin: 0.5em;
+      }
+    }
   }
 }
 </style>
