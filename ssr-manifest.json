@@ -52,9 +52,35 @@
     "/CyberSec2023/assets/stars-a8ea143e.svg"
   ],
   "../../../../../@vite-plugin-pwa/virtual:pwa-register": [
-    "/CyberSec2023/assets/virtual_pwa-register-d08f58c5.js"
+    "/CyberSec2023/assets/virtual_pwa-register-4f7fa59e.js"
   ],
   "index.html": [
+    "/CyberSec2023/assets/og-b40fd5b6.jpg",
+    "/CyberSec2023/assets/title-deco-cc485d6b.svg",
+    "/CyberSec2023/assets/boss-7aa3a8af.svg",
+    "/CyberSec2023/assets/deco-bar-aa798f5f.svg",
+    "/CyberSec2023/assets/R101-map-62265aca.svg",
+    "/CyberSec2023/assets/icon-hand-lock-ed38b31a.svg",
+    "/CyberSec2023/assets/icon-hand-shake-03c315fe.svg",
+    "/CyberSec2023/assets/CT08-map-276d7f78.svg",
+    "/CyberSec2023/assets/texture-157d134c.png",
+    "/CyberSec2023/assets/pattern-398773f5.svg",
+    "/CyberSec2023/assets/stars-a8ea143e.svg"
+  ],
+  "node_modules/.pnpm/@gtm-support+core@2.0.0/node_modules/@gtm-support/core/lib/index.js": [
+    "/CyberSec2023/assets/og-b40fd5b6.jpg",
+    "/CyberSec2023/assets/title-deco-cc485d6b.svg",
+    "/CyberSec2023/assets/boss-7aa3a8af.svg",
+    "/CyberSec2023/assets/deco-bar-aa798f5f.svg",
+    "/CyberSec2023/assets/R101-map-62265aca.svg",
+    "/CyberSec2023/assets/icon-hand-lock-ed38b31a.svg",
+    "/CyberSec2023/assets/icon-hand-shake-03c315fe.svg",
+    "/CyberSec2023/assets/CT08-map-276d7f78.svg",
+    "/CyberSec2023/assets/texture-157d134c.png",
+    "/CyberSec2023/assets/pattern-398773f5.svg",
+    "/CyberSec2023/assets/stars-a8ea143e.svg"
+  ],
+  "node_modules/.pnpm/@gtm-support+vue-gtm@2.0.0_vue@3.2.47/node_modules/@gtm-support/vue-gtm/dist/index.js": [
     "/CyberSec2023/assets/og-b40fd5b6.jpg",
     "/CyberSec2023/assets/title-deco-cc485d6b.svg",
     "/CyberSec2023/assets/boss-7aa3a8af.svg",
