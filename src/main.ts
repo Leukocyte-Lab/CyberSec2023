@@ -1,4 +1,14 @@
-import { createApp } from 'vue';
+import { ViteSSG } from 'vite-ssg/single-page';
+
+import { installModules } from '@/modules';
+
 import App from './App.vue';
 
-createApp(App).mount('#app');
+import 'unfonts.css';
+
+export const createApp = ViteSSG(
+  App,
+  (ctx) => {
+    installModules(ctx);
+  }
+);
