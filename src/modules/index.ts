@@ -1,6 +1,6 @@
 import { useCtx } from '@/modules/utils/context/context.service';
 
-import type { Module } from './types';
+import type { InstallContext, Module } from './types';
 
 function execModulesMethod(
   modulesOrder: string[],
@@ -31,7 +31,15 @@ function execModulesMethod(
     });
 }
 
+export const installModules = (ctx: InstallContext) => {
+  execModulesMethod(
+    ['gtm'],
+    'install',
+    ctx
+  )
+}
+
 export const setupModules = () => {
   const ctx = useCtx();
-  execModulesMethod(['pwa'], 'setup', ctx);
+  execModulesMethod(['meta', 'pwa'], 'setup', ctx);
 };
