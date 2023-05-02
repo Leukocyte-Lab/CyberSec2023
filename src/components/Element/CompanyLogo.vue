@@ -131,11 +131,15 @@ const props = withDefaults(
 
 <style lang="scss" scoped>
 .logo {
-  &--full {
+  &-full {
     fill: currentcolor;
 
     .cls-1 {
       font-size: 85.88px;
+    }
+
+    .cls-2 {
+      font-size: 251.5px;
     }
 
     .cls-1,
