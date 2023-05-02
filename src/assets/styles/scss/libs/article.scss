@@ -3,6 +3,7 @@
 .article {
   color: var(--text-color);
   padding: calc(6.5em * var(--font-scale));
+  width: 100%;
 
   &.align {
     &--center {
