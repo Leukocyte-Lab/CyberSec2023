@@ -168,7 +168,8 @@ const introductions = [
       display: inline;
       width: 200px;
       height: 0;
-      border: 2px solid palette.$white;
+      border: none;
+      border-top: 2px solid palette.$white;
       margin: 0;
     }
   }
