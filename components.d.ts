@@ -24,5 +24,6 @@ declare module '@vue/runtime-core' {
     MainContent: typeof import('./src/components/Layout/MainContent.vue')['default']
     OutlineTextGradient: typeof import('./src/components/Effects/OutlineTextGradient.vue')['default']
     SpotlightTitle: typeof import('./src/components/Element/SpotlightTitle.vue')['default']
+    TargetRing: typeof import('./src/components/Element/TargetRing.vue')['default']
   }
 }
