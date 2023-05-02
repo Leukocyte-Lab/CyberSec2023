@@ -1,5 +1,16 @@
+@use '@/assets/styles/scss/modules/theme.module.scss' as theme;
+
 .article {
   color: var(--text-color);
+  padding: 6.5em;
+
+  &.align {
+    &--center {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
   
   :first-child {
     margin-top: 0;
@@ -9,9 +20,39 @@
     display: none;
   }
 
+  h2.subtitle {
+    &:before {
+      content: '⋯ ';
+    }
+  }
+
   hr {
     width: 100%;
     border: 1px solid var(--text-color);
     opacity: 0.25;
+  }
+
+  p {
+    &.side {
+      display: inline;
+    }
+
+    &.isolate {
+      margin: 0;
+    }
+  }
+
+  img {
+    &.side {
+      display: inline;
+    }
+  }
+
+  .deco-bar {
+    width: 250px;
+  }
+
+  .outline {
+    @include text-outline-stroke($stroke-width: 2px, $color: theme.$primary-200);
   }
 }
