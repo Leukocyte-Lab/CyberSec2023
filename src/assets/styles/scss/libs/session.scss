@@ -1,0 +1,76 @@
+@use "@/assets/styles/scss/modules/theme.module.scss" as theme;
+
+%feature-border {
+  border-image-source: theme.$primary-gradient;
+  border-image-slice: 1;
+  border-style: solid;
+}
+
+.session {
+  max-width: theme.$breakpoint-desktop;
+  width: fit-content;
+
+  &.align {
+    &--left {
+      margin-left: 0;
+      margin-right: auto;
+    }
+
+    &--center {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &--right {
+      margin-left: auto;
+      margin-right: 0;
+    }
+  }
+
+  &.featured {
+    position: relative;
+    padding: 2.1875em;
+    border-width: 3px;
+    background-color: theme.$primary-700;
+    @extend %feature-border;
+
+    &:before {
+      $offset: 1em;
+
+      content: '';
+      position: absolute;
+      top: -$offset;
+      left: -$offset;
+      width: calc(100% + $offset * 2);
+      height: calc(100% + $offset * 2);
+      border-width: 5px;
+      box-sizing: border-box;
+
+      @extend %feature-border;
+    }
+  }
+
+  .label {
+    &:before {
+      content: "# ";
+    }
+  }
+
+  .wrapper-container {
+    &,
+    p {
+      margin: 0;
+    }
+  }
+
+  p {
+    &.info {
+      display: flex;
+      align-items: center;
+
+      span {
+        margin: 0 1em 0 0.5em;
+      }
+    }
+  }
+}
