@@ -91,15 +91,17 @@
         <template #deco>LOCATION</template>
         <template #text>攤位資訊</template>
       </SpotlightTitle>
-      <p class="paragraph font-size--body-1 font-bold font-align--center">抵達展館 4 樓後，從 R 區入口進來就可以看到我們囉！</p>
-      <img class="align--center" src="@/assets/images/material/R101-map.svg" alt="">
+      <p class="paragraph font-size--body-1 font-bold font-align--center">
+        抵達展館 4 樓後，從 R 區入口進來就可以看到我們囉！
+      </p>
+      <img class="align--center" src="@/assets/images/material/R101-map.svg" alt="" />
     </article>
     <article class="article align--center">
       <SpotlightTitle>
         <template #deco>OUR PRODUCT</template>
         <template #text>我們的產品</template>
       </SpotlightTitle>
-      <div class="wrapper wrapper-container col gap-4 align--center">  
+      <div class="wrapper wrapper-container col gap-4 align--center">
         <AGHLogo />
         <p class="session paragraph font-size--body-3 font-align--center align--center">
           ArgusHack 透過自動化、虛擬化與智慧化提升資安演練效率，<br />
@@ -108,14 +110,46 @@
         <AGHEyeRingLogo />
       </div>
       <div class="session mini wrapper wrapper-container col align--center">
-        <img class="align--center" src="@/assets/images/material/icon-hand-lock.svg" alt="">  
+        <img class="align--center" src="@/assets/images/material/icon-hand-lock.svg" alt="" />
         <h3 class="font-size--header-4 font-align--center">您是企業的資安團隊成員嗎？</h3>
-        <p class="paragraph font-size--body-3 font-align--center">ArgusHack 能有效幫助您評估資安建設可視性、為資安團隊進行真實演練，並能協助評估資安投資有效性，藉此全面提升您的資安體系健全度。</p>
+        <p class="paragraph font-size--body-3 font-align--center">
+          ArgusHack
+          能有效幫助您評估資安建設可視性、為資安團隊進行真實演練，並能協助評估資安投資有效性，藉此全面提升您的資安體系健全度。
+        </p>
       </div>
       <div class="session mini wrapper wrapper-container col align--center">
-        <img class="align--center" src="@/assets/images/material/icon-hand-shake.svg" alt="">  
-        <h3 class="font-size--header-4 font-align--center">您是提供資安產品<br />與服務的企業嗎？</h3>
-        <p class="paragraph font-size--body-3 font-align--center">ArgusHack 能協助您呈現資安設備的成效，並加強客戶對產品的信心。<br />透過 ArgusHack 的自動化技術更能有效降低人力成本，也作為企業不斷累積技術的軍火庫。</p>
+        <img class="align--center" src="@/assets/images/material/icon-hand-shake.svg" alt="" />
+        <h3 class="font-size--header-4 font-align--center">
+          您是提供資安產品<br />與服務的企業嗎？
+        </h3>
+        <p class="paragraph font-size--body-3 font-align--center">
+          ArgusHack 能協助您呈現資安設備的成效，並加強客戶對產品的信心。<br />透過 ArgusHack
+          的自動化技術更能有效降低人力成本，也作為企業不斷累積技術的軍火庫。
+        </p>
+      </div>
+    </article>
+    <article class="article align--center">
+      <div class="wrapper wrapper-container col gap-4 align--center">
+        <div class="wrapper wrapper-container col">
+          <h2 class="font-size--body-2 font-bold font-align--center">現正招募中</h2>
+          <h1 class="font-size--header-1 font-black outline font-align--center">WE ARE HIRING</h1>
+          <p class="font-size--body-3 font-align--center">
+            邀請您一起對抗資安威脅，為業界注入更多資安免疫力。
+          </p>
+        </div>
+        <div class="session">
+          <div class="wrapper wrapper-container row gap-8">
+            <div class="wrapper wrapper-container col gap-2">
+              <h3 class="font-size--header-4 font-bold">與我們聊聊</h3>
+              <hr />
+              <p class="paragraph font-size--body-2">
+                我們在 4F CT08
+                攤位設有人才招募專區，歡迎對我們公司文化及職缺有興趣的人才前來互動交流！
+              </p>
+            </div>
+            <img src="@/assets/images/material/CT08-map.svg" alt="" />
+          </div>
+        </div>
       </div>
     </article>
   </main>
