@@ -57,7 +57,7 @@
     <path
       style="
         fill: none;
-        stroke: url(#SVGID_00000017493072167291116080000004169296578325842053_);
+        stroke: url('#SVGID_00000017493072167291116080000004169296578325842053_');
         stroke-miterlimit: 10;
       "
       d="
@@ -165,34 +165,42 @@
 }
 
 .st0 {
-  fill: url(#SVGID_1_);
+  fill: url("#SVGID_1_");
 }
+
 .st1 {
   opacity: 0.75;
 }
+
 .st2 {
   fill: #040000;
 }
+
 .st3 {
   fill: none;
-  stroke: url(#SVGID_00000157996842115271449580000005408410338798239668_);
+  stroke: url("#SVGID_00000157996842115271449580000005408410338798239668_");
   stroke-miterlimit: 10;
 }
+
 .st4 {
   fill: #202124;
 }
+
 .st5 {
   opacity: 0.3;
-  fill: #ffffff;
+  fill: #fff;
   enable-background: new;
 }
+
 .st6 {
-  fill: #ffffff;
+  fill: #fff;
 }
+
 .st7 {
   font-family: 'Noto Sans CJK TC', 'Noto Sans TC', sans-serif;
   font-weight: 700;
 }
+
 .st8 {
   font-size: 14px;
 }

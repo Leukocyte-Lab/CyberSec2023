@@ -43,9 +43,10 @@
     padding: calc(2.1875em * var(--font-scale));
     border-width: calc(3px * var(--font-scale));
     background-color: theme.$primary-700;
+
     @extend %feature-border;
 
-    &:before {
+    &::before {
       $offset: calc(1em * var(--font-scale));
 
       content: '';
@@ -62,7 +63,7 @@
   }
 
   .label {
-    &:before {
+    &::before {
       content: "# ";
     }
   }

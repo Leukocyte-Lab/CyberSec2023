@@ -33,7 +33,7 @@
     }
   }
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     top: calc(4px * var(--font-scale) * -1);
