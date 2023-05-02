@@ -43,8 +43,16 @@
   }
 
   img {
+    max-width: theme.$breakpoint-tablet;
+
     &.side {
       display: inline;
+    }
+
+    &.align {
+      &--center {
+        margin: 0 auto;
+      }
     }
   }
 

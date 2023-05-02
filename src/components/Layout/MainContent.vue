@@ -70,35 +70,53 @@
         <template #deco>ACTIVITY</template>
         <template #text>活動資訊</template>
       </SpotlightTitle>
-      <h2 class="font-size--body-1 font-align--center">
-        智慧報告、即時串流、簡單操作，<br />ArgusHack - APT 新升級
-      </h2>
-      <p class="paragraph font-align--center font-size--body-3">
-        展示 ArgusHack-APT 全新的即時串流畫面與新款演練執行介面，<br />
-        讓您能快速掌握當前演練狀態，並使操作更簡單易用。
-      </p>
+      <div class="wrapper wrapper-container row gap-8">
+        <TargetRing>
+          <template #title>Tech Demo</template>
+          <template #subtitle>5/9 (二) - 5/11 (四) 14:10 - 14:40</template>
+        </TargetRing>
+        <div class="wrapper wrapper-container col gap-2">
+          <h2 class="font-size--body-1">
+            智慧報告、即時串流、簡單操作，<br />ArgusHack - APT 新升級
+          </h2>
+          <p class="paragraph font-size--body-3">
+            展示 ArgusHack-APT 全新的即時串流畫面與新款演練執行介面，<br />
+            讓您能快速掌握當前演練狀態，並使操作更簡單易用。
+          </p>
+        </div>
+      </div>
+    </article>
+    <article class="article align--center">
+      <SpotlightTitle>
+        <template #deco>LOCATION</template>
+        <template #text>攤位資訊</template>
+      </SpotlightTitle>
+      <p class="paragraph font-size--body-1 font-bold font-align--center">抵達展館 4 樓後，從 R 區入口進來就可以看到我們囉！</p>
+      <img class="align--center" src="@/assets/images/material/R101-map.svg" alt="">
     </article>
     <article class="article align--center">
       <SpotlightTitle>
         <template #deco>OUR PRODUCT</template>
         <template #text>我們的產品</template>
       </SpotlightTitle>
-      <AGHLogo />
-      <p class="session paragraph font-size--body-3 font-align--center align--center">
-        ArgusHack 透過自動化、虛擬化與智慧化提升資安演練效率，<br />
-        並能輔助資安驗證、政策檢視、投資評估、成效檢視等。
-      </p>
-      <AGHEyeRingLogo />
-      <section>
-        <img src="@/assets/images/material/icon-hand-lock.svg" alt="">  
+      <div class="wrapper wrapper-container col gap-4 align--center">  
+        <AGHLogo />
+        <p class="session paragraph font-size--body-3 font-align--center align--center">
+          ArgusHack 透過自動化、虛擬化與智慧化提升資安演練效率，<br />
+          並能輔助資安驗證、政策檢視、投資評估、成效檢視等。
+        </p>
+        <AGHEyeRingLogo />
+      </div>
+      <div class="session mini wrapper wrapper-container col align--center">
+        <img class="align--center" src="@/assets/images/material/icon-hand-lock.svg" alt="">  
         <h3 class="font-size--header-4 font-align--center">您是企業的資安團隊成員嗎？</h3>
         <p class="paragraph font-size--body-3 font-align--center">ArgusHack 能有效幫助您評估資安建設可視性、為資安團隊進行真實演練，並能協助評估資安投資有效性，藉此全面提升您的資安體系健全度。</p>
-      </section>
-      <section>
-        <img src="@/assets/images/material/icon-hand-shake.svg" alt="">  
-        <h3 class="font-size--header-4 font-align--center">您是提供資安產品與服務的企業嗎？</h3>
-        <p class="paragraph font-size--body-3 font-align--center">ArgusHack 能協助您呈現資安設備的成效，並加強客戶對產品的信心。透過 ArgusHack 的自動化技術更能有效降低人力成本，也作為企業不斷累積技術的軍火庫。</p>
-      </section>
+      </div>
+      <div class="session mini wrapper wrapper-container col align--center">
+        <img class="align--center" src="@/assets/images/material/icon-hand-shake.svg" alt="">  
+        <h3 class="font-size--header-4 font-align--center">您是提供資安產品<br />與服務的企業嗎？</h3>
+        <p class="paragraph font-size--body-3 font-align--center">ArgusHack 能協助您呈現資安設備的成效，並加強客戶對產品的信心。<br />透過 ArgusHack 的自動化技術更能有效降低人力成本，也作為企業不斷累積技術的軍火庫。</p>
+      </div>
     </article>
   </main>
 </template>
