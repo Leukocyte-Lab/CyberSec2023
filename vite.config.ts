@@ -30,7 +30,7 @@ export default defineConfig({
       resolvers: [
         IconsResolver({
           prefix: 'icon',
-          enabledCollections: ['mdi', 'ic'],
+          enabledCollections: ['mdi', 'ic', 'fa6-brands'],
         })
       ]
     }),
