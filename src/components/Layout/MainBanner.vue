@@ -65,7 +65,7 @@ const introductions = [
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-image: url('@/assets/images/material/texture.png');
+    background-image: url('@/assets/images/material/texture.jpg');
     background-size: cover;
     background-position: center;
     overflow: hidden;
