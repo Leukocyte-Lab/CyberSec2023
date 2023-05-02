@@ -1,0 +1,27 @@
+.wrapper {
+  &-container {
+    position: relative;
+    display: flex;
+    margin: 6em 0;
+
+    &.row {
+      flex-direction: row;
+    }
+
+    &.col {
+      flex-direction: column;
+    }
+
+    @for $i from 1 through 10 {
+      &.gap-#{$i} {
+        gap: #{$i}em;
+      }
+    }
+
+    &.align {
+      &-center {
+        align-items: center;
+      }
+    }
+  }
+}
