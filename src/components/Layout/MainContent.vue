@@ -77,8 +77,8 @@
           </div>
         </section>
         <p class="session mini paragraph font-size--body-3 align--left">
-          Leukocte-Lab 的核心理念是將資安技術轉化為價值，提供優良的價值傳遞管道。<br />
-          如果你對打造將知識轉化為價值的新世代資安產品有熱忱，或者熱愛接受困難挑戰，對於改變價值傳遞管道的創新商業模式有興趣，那麼我們肯定是你最佳的選擇。
+          Leukocte-Lab 的核心理念是將資安技術轉化為價值，提供優良的價值傳遞管道。
+          如果你對打造「將知識轉化為價值」的新世代資安產品有熱忱，或者樂於接受各種挑戰，對於改變價值傳遞管道的創新商業模式有興趣，那麼我們肯定是你最佳的選擇。
         </p>
       </div>
     </article>
@@ -112,7 +112,13 @@
         抵達展館 4 樓後，從 R 區入口進來就可以看到我們囉！
       </p>
       <div class="wrapper wrapper-container align--center">
-        <a href="https://goo.gl/maps/hrwEaN9wkvAroPCf6" target="_blank" rel="noopener noreferrer" class="button font-size--body-2 font-bold"><span>查看會場位置</span></a>
+        <a
+          href="https://goo.gl/maps/hrwEaN9wkvAroPCf6"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button font-size--body-2 font-bold"
+          ><span>查看會場位置</span></a
+        >
       </div>
       <img class="align--center" src="@/assets/images/material/R101-map.svg" alt="" />
     </article>
@@ -136,7 +142,17 @@
           ArgusHack
           能有效幫助您評估資安建設可視性、為資安團隊進行真實演練，並能協助評估資安投資有效性，藉此全面提升您的資安體系健全度。
         </p>
-        <a href="https://resource.lkc-lab.com/AGH-White-Paper-1" target="_blank" rel="noopener noreferrer" class="button font-size--body-2 font-bold"><span>下載產品白皮書<icon-ic-outline-file-download /></span></a>
+        <p class="paragraph font-size--body-3 font-align--center">
+          近期熱門的話題「金融資安行動方案2.0」，也能使用 ArgusHack
+          來達到合規，一起來看看要如何實作吧！
+        </p>
+        <a
+          href="https://resource.lkc-lab.com/AGH-White-Paper-1"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button font-size--body-2 font-bold"
+          ><span>下載產品白皮書<icon-ic-outline-file-download /></span
+        ></a>
       </div>
       <div class="session mini wrapper wrapper-container col align--center">
         <img class="icon align--center" src="@/assets/images/material/icon-hand-shake.svg" alt="" />
@@ -144,10 +160,19 @@
           您是提供資安產品<br />與服務的企業嗎？
         </h3>
         <p class="paragraph font-size--body-3 font-align--center">
-          ArgusHack 能協助您呈現資安設備的成效，並加強客戶對產品的信心。<br />透過 ArgusHack
-          的自動化技術更能有效降低人力成本，也作為企業不斷累積技術的軍火庫。
+          ArgusHack
+          能協助您呈現資安設備的成效，並加強客戶對產品的信心，自動化技術更能有效降低人力成本，協助您快速打入更深更廣的市場。
         </p>
-        <a href="https://resource.lkc-lab.com/AGH-White-Paper-2" target="_blank" rel="noopener noreferrer" class="button font-size--body-2 font-bold"><span>下載產品白皮書<icon-ic-outline-file-download /></span></a>
+        <p class="paragraph font-size--body-3 font-align--center">
+          不僅如此，我們的產品也適用於「金融資安行動方案2.0」，快來看看如何透過 ArgusHack 提供服務吧！
+        </p>
+        <a
+          href="https://resource.lkc-lab.com/AGH-White-Paper-2"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button font-size--body-2 font-bold"
+          ><span>下載產品白皮書<icon-ic-outline-file-download /></span
+        ></a>
       </div>
     </article>
     <article id="hiring" class="article align--center">
@@ -159,7 +184,13 @@
             邀請您一起對抗資安威脅，為業界注入更多資安免疫力。
           </p>
           <div class="wrapper wrapper-container align--center">
-            <a href="https://www.cakeresume.com/companies/leukocyte-lab-co-ltd/jobs" target="_blank" rel="noopener noreferrer" class="button font-size--body-2 font-bold"><span>加入我們</span></a>
+            <a
+              href="https://www.cakeresume.com/companies/leukocyte-lab-co-ltd/jobs"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button font-size--body-2 font-bold"
+              ><span>加入我們</span></a
+            >
           </div>
         </div>
         <div class="session">
