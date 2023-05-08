@@ -77,7 +77,7 @@
           </div>
         </section>
         <p class="session mini paragraph font-size--body-3 align--left">
-          Leukocte-Lab 的核心理念是將資安技術轉化為價值，提供優良的價值傳遞管道。<br />
+          Leukocyte-Lab 的核心理念是將資安技術轉化為價值，提供優良的價值傳遞管道。<br />
           如果你對打造將知識轉化為價值的新世代資安產品有熱忱，或者熱愛接受困難挑戰，對於改變價值傳遞管道的創新商業模式有興趣，那麼我們肯定是你最佳的選擇。
         </p>
       </div>
